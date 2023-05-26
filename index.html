@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="level">
+
+    </div>
+
+    <!-- Parent des game -->
+    <div class="game">
+        <div class="name">Typing spped Test Came</div>
+        <!-- contaoner element  -->
+        <div class="container">
+            <!-- massage -->
+            <div class="message">
+                your are Paling on
+                <span class="lvl">
+                    <select name="test" class="test">
+                        <option value="easy">Easy</option>
+                        <option value="medium">Medium</option>
+                        <option value="hard">Hard</option>
+                    </select>
+
+                </span>
+                level1 & YOu Have
+                <span class="seconds"></span>
+                seconds To Type The Word
+            </div>
+            <!-- start -->
+            <div class="start">Start Plaing</div>
+            <!-- word -->
+            <div class="the-word"></div>
+            <!-- input -->
+            <input type="text" class="input">
+            <!-- upcoming-words  -->
+            <div class="upcoming-words">
+                Words Will Show Here
+            </div>
+            <!-- control -->
+            <div class="contorl">
+                <div class="time">Time left: <span></span> Seconds</div>
+                <div class="score"> Scroe:<span class="got"> 0 </span>Form <span class="total"></span></div>
+            </div>
+            <!-- finisch -->
+            <div class="finisch"></div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

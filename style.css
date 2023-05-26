@@ -1,0 +1,160 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+body {
+    font-family: serif;
+    cursor: pointer;
+}
+
+.game {
+    background-color: beige;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.name {
+    text-align: center;
+    background-color: blue;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffff;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.message {
+    background-color: #ffff;
+    padding: 20px;
+    margin: 1.5em 0;
+    font-size: 1.3rem;
+    letter-spacing: 0.3px;
+    text-align: center;
+    text-transform: capitalize;
+    line-height: 20px;
+    border-radius: 20px;
+}
+
+.message span {
+    font-size: 2rem;
+    color: aqua;
+}
+
+.message span::before {
+    content: '[ ';
+}
+
+.message span::after {
+    content: ' ]';
+}
+
+.start {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #ffff;
+    padding: 1.2em;
+    background-color: rgba(0, 0, 255, 0.474);
+    border-radius: 10px;
+}
+
+
+.the-word {
+    text-align: center;
+    padding: 0.5em;
+    font-size: 4rem;
+    margin: 1em 0;
+    background-color: #7a3d3d;
+    color: #0000ff;
+    font-weight: 800;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    /* Damit man das Wotd nicht kopiert */
+    user-select: none;
+}
+
+.input {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1em;
+    border: 2px solid blue;
+    text-align: center;
+    text-transform: capitalize;
+    display: block;
+    border-radius: 6px;
+    /* zeigt das leine mit rot od */
+    caret-color: #ff0000;
+}
+
+.input:focus {
+    outline: none;
+
+}
+
+.upcoming-words {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15px;
+    margin: 15px;
+    background-color: #ffff;
+    width: 100%;
+    margin: 1em 0;
+    border-radius: 10px;
+    background-color: #c01c1c;
+}
+
+.upcoming-words div {
+    background-color: #8f5b5b;
+    color: #ffffff;
+    font-size: 2em;
+    margin-left: 1em;
+    padding: 0.4em;
+    border-radius: 10px;
+    text-shadow: 0px 2px 4px #000;
+}
+
+.contorl {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4em;
+    background-color: #ffff;
+    padding: 1em;
+}
+
+.contorl span {
+    font-weight: bold;
+    color: green;
+}
+
+.finisch {
+    font-weight: bold;
+    font-size: 4rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.finisch .good {
+    color: green;
+}
+
+.finisch .bad {
+    color: red;
+}
